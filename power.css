@@ -6,8 +6,13 @@
 /* Remove any value set by the user-agent stylesheet. */
 * {
 	all: unset;
-	color: unset; /* For Chrome */
-	box-sizing: border-box; /* This is slitghly opiniotated. */
+	
+	/* Webkit quirks */
+	-webkit-text-emphasis-color: initial;
+	-webkit-text-fill-color: initial;
+	
+	/* Slightly opiniotated things. */
+	box-sizing: border-box;
 }
 
 /* Set display: none; elements. These should never appear. */
