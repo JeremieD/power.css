@@ -11,7 +11,7 @@
 	-webkit-text-emphasis-color: initial;
 	-webkit-text-fill-color: initial;
 	
-	/* Slightly opiniotated things. */
+	/* Slightly opinionated things. */
 	box-sizing: border-box;
 }
 
@@ -43,5 +43,5 @@ td, th { display: table-cell; }
 b { font-weight: bold; }
 i { font-style: italic; }
 s { text-decoration: line-through; }
-sup { font-feature-settings: "sups" on; } /* Slightly opiniotated. Change depending on font. */
+sup { font-feature-settings: "sups" on; } /* Slightly opinionated. Change depending on font. */
 sub { font-feature-settings: "subs" on; } /* Same. */
