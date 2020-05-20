@@ -12,7 +12,7 @@
 	-webkit-text-fill-color: initial;
 	
 	/* Chromium quirks */
-	color: initial;
+	color: inherit;
 	
 	/* Slightly opinionated things. */
 	box-sizing: border-box;
