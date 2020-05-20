@@ -11,6 +11,9 @@
 	-webkit-text-emphasis-color: initial;
 	-webkit-text-fill-color: initial;
 	
+	/* Chromium quirks */
+	color: initial;
+	
 	/* Slightly opinionated things. */
 	box-sizing: border-box;
 }
