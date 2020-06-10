@@ -39,7 +39,7 @@ figure, figcaption {
 table { display: table; }
 tbody { display: table-row-group; }
 thead { display: table-header-group; }
-tfoot { display: table-footer-group;; }
+tfoot { display: table-footer-group; }
 tr { display: table-row; }
 td, th { display: table-cell; }
 
