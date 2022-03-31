@@ -4,7 +4,7 @@
 /*---------------------------------------*/
 
 /* Remove any value set by the user-agent stylesheet. */
-*, ::before, ::after {
+*:not(svg, svg *), ::before, ::after {
 	all: unset;
 	
 	/* Webkit quirks */
@@ -35,7 +35,7 @@ nav, section, aside, article,
 h1, h2, h3, h4, h5, h6,
 div, p, hr,
 ul, ol, li,
-img, picture, video,
+img, picture, video, svg
 figure, figcaption {
 	display: block;
 }
