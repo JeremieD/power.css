@@ -1,50 +1,33 @@
 # power.css
 The reset that gives power back to CSS.
 
-Have you discovered [the lobotomized owl selector](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/), only to find out it is basically useless in practice because of all the default user-agent styles? When is the last time you *actually* used inheritance in CSS?
-
-This is the reset for people who think Cascading Stylesheets should cascade. With this reset you can fully take advantage of inheritance, cascading and axiomatic CSS.
 
 ## What you can do with this
-This reset gives you full control over the style of every HTML element. With it, you'll spend less time fighting with the styles browsers add to a page and more time writing *exactly* what you want.
+Most browsers declare default styling on most elements. When styling a website, you have to override browsers’ stylesheets to get what you want.
 
-The idea is that it forces you to write more general styles. You can write basic rules first:
-```
-*+* { margin-top: 1em }
-```
-And then specialize depending on context:
-```
-main section+section { margin-top: 100px }
-```
-You work from general to specific, hopefully writing less code more beautifully.
-You still deal with the browsers' *rendering* quirks, but not their *opinionated* stylesheets.
+With this reset, you don’t have to think about this. All elements have no style by default.
+You are free to use them semantically in your HTML page. Then, depending on context, style them as you need.
 
-### Making HTML semantic again
-How often do you use unordered lists to display a text-book style list in an article? HTML is *semantic*. Lists should be used whenever the concept of *listing* something is appropriate. We use `ul` all the time to enumerate various elements, and we constantly have to remove their default stylings. By removing the default styles, you can think specifically about your website and what you are most likely to do with lists. If you never ever use them with bullets, why ever declare a `list-style` property.
+You still deal with the browsers’ *rendering* quirks, but not with their default stylesheet quirks.
 
-With this reset, you don't have to think about this. Lists have no styles by default. You can use them semantically in your HTML page. Then, depending on context, style them as you need. If you do use them in a text with bullet points, then perhaps something like this is more *semantically* relevant.
-```
-article ul li {
-	/* Style actual text lists here. */
-}
-```
+This can make for some more elegant, shorter, and more readable CSS.
+
 
 ## Get started
-To use this reset, simply download the power.css file and include it in your HTML page, before any other CSS. Feel free to customize things.
+To use this reset, download the `power.css` file and include it in your HTML page, before any other CSS. Feel free to customize things.
 
-It will make your HTML-only page look even more bare-bone than it normally would. You can now begin adding your custom styles. You might start with a custom font. For example, you could add this style to the `:root` element.
-```
+It will make your HTML-only page look even more bare-bones than it normally would. You can now begin adding your custom styles. You might start with a custom font. For example, you could add this style to the `:root` element.
+```css
 :root {
-	font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
 }
 ```
-If you have [Inter](https://github.com/rsms/inter) on your computer, all text would be set using it. And that is an understatement. Usually, browsers redeclare fonts on some elements, notably forms. None of that with this reset. By default, this will change the font of **all** inheriting elements.
+If you have [Inter](https://github.com/rsms/inter) on your computer, all text would be set using it, but that’s an understatement. Usually, browsers redeclare fonts on some elements, notably forms. None of that with this reset. By default, this will change the font of **all** inheriting elements.
 
-It's as simple as that.
+It’s as simple as that.
 
-You can now write your code as it should be, without thinking about what the browser thinks it should be.
 
 ## Compatibility
-Unfortunately support for `all` is limited to modern browsers. This reset won't work in Internet Explorer, which is probably the least of your worries if you're interested in this.
+Support for `all` has been widely available in major browsers since 2020, so this reset should be pretty safe to use.
 
 [See the support table here.](https://caniuse.com/#feat=css-all)
