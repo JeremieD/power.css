@@ -1,48 +1,51 @@
 /*---------------------------------------*/
-/*               power.css               */
-/*     A CSS Reset by Jérémie Dupuis     */
-/*     github.com/JeremieD/power.css     */
+/*            JEJ’s reset.css            */
+/*      github.com/jjjejjj/reset.css     */
 /*---------------------------------------*/
 
 /* Remove any value set by the user-agent stylesheet. */
 *:not(svg, svg *), ::before, ::after {
-	all: unset;
-	
-	/* Webkit quirks */
-	-webkit-text-emphasis-color: initial;
-	-webkit-text-fill-color: initial;
-	
-	/* Chromium quirks */
-	color: inherit;
-	
-	/* Slightly opinionated things. */
-	box-sizing: border-box;
+  all: unset;
+
+  /* WebKit quirks */
+  -webkit-text-emphasis-color: initial;
+  -webkit-text-fill-color: initial;
+
+  /* Chromium quirks */
+  color: inherit;
+
+  /* Slightly opinionated thing. */
+  box-sizing: border-box;
 }
 
-/* Accessible by default. */
+/* Accessible by default. You can use :focus-visible for modern browsers. */
 :focus {
-	outline: auto;
+  outline: auto;
 }
 
 /* Set display: none; elements. These should never appear. */
 head, base, link, meta, title, script, source, style, template {
-	display: none;
+  display: none;
 }
 
 /* Set default block elements. Customize only for very general uses. */
 html, body,
-header, main, footer,
-nav, section, aside, article,
-h1, h2, h3, h4, h5, h6,
-div, p, hr,
-ul, ol, li,
-img, picture, video, svg,
-figure, figcaption {
-	display: block;
+header, main, footer, nav,
+section, aside, article, div,
+form, fieldset, textarea,
+hgroup, h1, h2, h3, h4, h5, h6,
+hr, p, blockquote,
+ul, ol, dl, menu, li, dt, dd,
+figure, figcaption,
+img, picture, audio, video, svg {
+  display: block;
 }
 
 /* Set default table elements. These elements depend on this CSS to be of any use. */
-table { display: table; }
+table {
+  display: table;
+  border-collapse: collapse;
+}
 tbody { display: table-row-group; }
 colgroup { display: table-column-group; }
 thead { display: table-header-group; }
@@ -54,6 +57,7 @@ td, th { display: table-cell; }
 /* Basic text styles */
 b { font-weight: bold; }
 i { font-style: italic; }
+u { text-decoration: underline; }
 s { text-decoration: line-through; }
 sup { font-feature-settings: "sups" on; } /* Slightly opinionated. Change depending on font. */
 sub { font-feature-settings: "subs" on; } /* Same. */
